@@ -1,0 +1,15 @@
+{
+    "name": "nathan/wj-crypto",
+    "autoload": {
+        "psr-4": {
+            "Nathan\\WjCrypto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nathan Oliveira",
+            "email": "nathanoliveira003jf@gmail.com"
+        }
+    ],
+    "require": {}
+}
