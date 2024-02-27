@@ -11,5 +11,11 @@
             "email": "nathanoliveira003jf@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php-di/php-di": "^7.0",
+        "doctrine/orm": "^2.11.0",
+        "doctrine/dbal": "^3.2",
+        "symfony/yaml": "^5.4",
+        "symfony/cache": "^5.4"
+    }
 }
