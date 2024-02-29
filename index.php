@@ -1,4 +1,5 @@
 <?php
+use Pecee\SimpleRouter\SimpleRouter;
 require_once "vendor/autoload.php";
 require_once "config/illuminate-database.config.php";
 
