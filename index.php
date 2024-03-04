@@ -1,11 +1,6 @@
 <?php
-use Pecee\SimpleRouter\SimpleRouter;
 require_once "vendor/autoload.php";
+require_once "config/phpdotenv.config.php";
+require_once "./vendor/pecee/simple-router/helpers.php";
 require_once "config/illuminate-database.config.php";
-
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+require_once "routes/api.php";
