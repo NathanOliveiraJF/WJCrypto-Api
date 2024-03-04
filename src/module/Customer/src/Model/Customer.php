@@ -2,61 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Webjump\Customer\Model;
+namespace module\Customer\src\Model;
+use Illuminate\Database\Eloquent\Model;
 
-use DateTime;
+class Customer extends Model{
 
-class Customer  {
-  private int $entityId;
-  private string $name;
-  private string $taxvat;
-  private string $docNumber;
-  private string $telephone;
-  private string $address;
-  private DateTime $dob;
+  protected $table = "customers";
 
-  public function __construct(int $entityId, string $name, string $taxvat, string $docnumber, string $telephone, string $address, DateTime $dob) {
-    $this->entityId = $entityId;
-    $this->name = $name;
-    $this->taxvat = $taxvat;
-    $this->docNumber = $docnumber;
-    $this->telephone = $telephone;
-    $this->address = $address;
-    $this->dob = $dob;
-  }
-
-  public function getEntityId(): int 
-  {
-    return $this->entityId;
-  }
-
-  public function getName(): string
-  {
-    return $this->name;
-  }
-
-  public function getTaxvat(): string
-  {
-    return $this->taxvat;
-  }
-
-  public function getDocNumber(): string
-  {
-    return $this->docNumber;
-  }
-
-  public function getTelephone(): string
-  {
-    return $this->telephone;
-  }
-
-  public function getAddress(): string
-  {
-    return $this->address;
-  }
-
-  public function getDob(): DateTime 
-  {
-    return $this->dob;
-  }
+  protected $fillable = [
+    "id",
+    "name",
+    "taxvat",
+    "docNumber",
+    "telephone",
+    "address",
+    "dob"
+  ];
 }
