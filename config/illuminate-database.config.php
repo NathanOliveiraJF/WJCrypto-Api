@@ -14,3 +14,5 @@ $capsule->addConnection([
     'collation' => 'utf8_unicode_ci',
     'prefix' => '',
 ]);
+
+$capsule->bootEloquent();
