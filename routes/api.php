@@ -1,6 +1,6 @@
 <?php
-use module\Customer\src\Controller\CustomerController;
+use Module\Customer\Controller\CustomerController;
 use Pecee\SimpleRouter\SimpleRouter as Route;
 
-Route::get('/v1/api/users', [CustomerController::class, "getUser"]);
+Route::post('/v1/api/users', [CustomerController::class, "postCustomer"]);
 Route::start();

@@ -2,7 +2,7 @@
     "name": "nathan/wj-crypto",
     "autoload": {
         "psr-4": {
-            "module\\": "src/module/"
+            "Module\\": "src/module/"
         }
     },
     "authors": [
